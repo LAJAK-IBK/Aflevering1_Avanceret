@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Location" class="control-label"></label>
-                @Html.DropDownListFor(model => model.Location, new SelectList(Enum.GetValues(typeof(Locations))),"Select Location")
+                @Html.DropDownListFor(model => model.Location, new SelectList(Enum.GetValues(typeof(Locations))),"Vælge placering")
                 <span asp-validation-for="TaskName" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -37,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Unit" class="control-label"></label>
-                @Html.DropDownListFor(model => model.Unit, new SelectList(Enum.GetValues(typeof(Units))),"Select Unit")
+                @Html.DropDownListFor(model => model.Unit, new SelectList(Enum.GetValues(typeof(Units))),"Vælge enhed")
                 <span asp-validation-for="TaskName" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
